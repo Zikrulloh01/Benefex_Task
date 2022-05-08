@@ -1,0 +1,53 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-05-08T09:56:33.648Z",
+        "line": 10,
+        "name": "Get unique ids of posts",
+        "description": "",
+        "id": "get-num-of-blog-posts-for-a-user;get-unique-ids-of-posts",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6846066900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User goes to the end url",
+            "match": {
+              "location": "count_posts_steps.user_goes_to_the_end_url()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 692207400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify each post has unique id",
+            "match": {
+              "location": "count_posts_steps.verifyEachPostHasUniqueId()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@wip"
+          }
+        ]
+      }
+    ],
+    "name": "Get num of blog posts for a user",
+    "description": "",
+    "id": "get-num-of-blog-posts-for-a-user",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/userStory.feature",
+    "tags": []
+  }
+]
